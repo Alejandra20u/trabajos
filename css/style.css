@@ -1,0 +1,239 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background: rgb(111, 129, 209);
+}
+/*Root se utiliza para crear variables repetidas dentro del sitio web*/
+
+:root{
+    --primary-color: #67288b;
+    --secundario-color: #0bc0d8;
+
+}
+
+
+.fila{
+    display: flex;
+    width: 1200px;
+    margin: 50px auto;
+    border: 2px solid var(--primary-color);
+}
+
+.fila .contBotones{
+    width: 50%;
+    background: var(--primary-color);
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.contBotones h2{
+    color: #f5f7fa;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contBotones button{
+    padding: 12px 30px;
+    background: var(--secundario-color);
+    color: var(--primary-color);
+    border: 1px solid #afc9ec;
+    font-size: 24px;
+    margin: 5px; ;
+}
+.fila .contFiguras{
+    width: 50%;
+    background: rgb(177, 121, 241);
+    text-align: center;
+    padding: 30px 20px;
+}
+.contFiguras h2{
+    font-size: 40px;
+    color: rgba(250, 248, 248, 0.986);
+    margin-bottom: 25px;
+}
+.contFiguras #figuras{
+    width: 180px;
+    height: 180px;
+    background: var(--secundario-color);
+    margin: 40px auto;
+    align-items: center;
+    transition: 1s;
+
+}
+#figuras.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg);
+    /*rotate= girar
+    scale= aumenta,disminulle
+    transform= sirve para cambiar la figura*/
+}
+#figuras.rombo{
+    transform: rotate(45deg);
+    border-radius: 0%;
+}
+#figuras.rectanguloh{
+    transform: scaleY(60%);
+}
+#figuras.rectangulov{
+    transform:  scaleX(60%);
+}
+#figuras.arriba{
+     transform: translateY(-40px) ;
+}
+#figuras.abajo{
+    transform: translateY(40px) ;
+}
+#figuras.izquierda{
+    transform: translateX(-40px) ;
+}
+#figuras.derecha{
+    transform: translateX(40px) ;
+}
+#figuras.diagonal{
+    transform: translate(180px, 80px);
+}
+#figuras.triangulo{
+    width: 0;
+    height: 0;
+    background: rgb(177, 121, 241);
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid #07f1ca;
+
+}
+#figuras.imagen{
+    background: url(../img/images\ 1.jpg);
+
+    /*c*/
+}
+.fila .contform{ 
+    width: 50%;
+    background: #b2bbe9;
+    color:#0a0a0a;
+    text-align: center;
+    padding: 40px;
+}
+.fila .contform h2{
+    font-size: 30px;
+
+}
+.fila .contform{
+    font-size: 24px;
+}
+
+.contform form .formGroup{
+    padding: 10px 50px;
+    text-align: left;
+}
+form .formGroup label{
+    display: block;
+}
+form .formGroup input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+form .formGroup select{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+form .formGroup textarea{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+form button{
+    background: #b2bbe9;
+    font-size:  20px;
+    padding: 12px 40px;
+    color: hwb(0 5% 95%);
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+form button:hover{
+    padding: 12px 60px;
+    
+   }
+form{
+     margin-top: 40px;
+    }
+.fila .contAvatar{
+    text-align: center;
+    padding: 40px;
+    background: #6e80e7;
+    width: 50%;
+}
+
+.fila .contAvatar img{
+    width: 200px;
+}
+.fila .contAvatar h3{
+    font-size: 30px;
+    color: #b2bbe9;
+    margin-bottom: 15px;
+
+}
+.fila .contAvatar p{
+    color: #2f4d74;
+    font-size: 26px;
+    margin-bottom: 15px;
+
+}
+
+#contAvatar.Azul{
+    background: #0140fa;
+}
+#contAvatar.Morado{
+    background: #7101fa;
+}
+#contAvatar.Rojo{
+    background: #fa0101;
+}
+#contAvatar.Amarillo{
+    background: #fae501;
+}
+#contAvatar.Naranja{
+    background: #fa6901;
+}
+#contAvatar.Verde{
+    background: #60fa01;
+}
+
+.btn-nav{
+    position: absolute;
+    bottom: 100px;
+    right: 120px;
+    background: #07f1ca;
+    color:#f7f8f7;
+    padding: 12px 40px;
+    text-decoration: none;
+}
+
+.fila .contEjercicios{
+    width: 50%;
+    background: var(--primary-color);
+    text-align: center;
+    padding: 20px 10px;
+}  
+.contEjercicios h2{
+    color: #f5f7fa;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contEjercicios button{
+    padding: 12px 30px;
+    background: var(--secundario-color);
+    color: var(--primary-color);
+    border: 1px solid #afc9ec;
+    font-size: 24px;
+    margin: 5px; ;
+}
+
+
+
